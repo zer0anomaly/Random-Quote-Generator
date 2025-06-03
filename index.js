@@ -3,11 +3,11 @@ let quote = document.getElementById('quote');
 let author = document.getElementById('author');
 
 quotebutton.addEventListener('click', () => {
-	fetch("https://zenquotes.io/api/random")
+	fetch("https://quotes-api-self.vercel.app/quote")
 		.then(response => response.json())
 		.then(data => {
-			quote.textContent = data[0].q
-			author.textContent = data[0].a
+			quote.textContent = data.quote
+			author.textContent = data.author
 		})
 		.catch(error => {
 			console.error('Error fetching quote:', error);
