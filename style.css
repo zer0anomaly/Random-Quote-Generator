@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e5e5e5;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.quote-box {
+  background: rgba(30, 30, 40, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.quote-author {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #c0c0c0;
+  margin-bottom: 2rem;
+}
+
+.quote-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.quote-button:hover {
+  background-color: #4338ca;
+  transform: scale(1.05);
+}
